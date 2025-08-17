@@ -1,10 +1,18 @@
+body {
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    border: 1px solid black;
+    width: 960px;
+    height: 960px;
 }
 
 .container > div {
-    background-color: red;
-    padding: 29px;
+    background-color: white;
+    border: 1px solid black;
 }
