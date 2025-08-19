@@ -11,15 +11,10 @@ body {
     width: 700px;
     height: 700px;
     flex-wrap: wrap;
-    /* align-content: flex-start; */
 }
 
 .square {
     background-color: white;
     border: 1px solid black;
     box-sizing: border-box;
-    /* width: 10px;
-    height: 10px; */
-    /* flex: 1; */
-    /* flex-basis: 110px; */
 }
