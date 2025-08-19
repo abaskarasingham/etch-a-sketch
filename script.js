@@ -8,6 +8,7 @@ function generateGrid(input) {
 
     for (let i = 0; i < totalSquares; ++i) {
         const div = document.createElement("div");
+        
         div.classList.add("square");
         div.style.width = `${dimensions}px`;
         div.style.height = `${dimensions}px`;
@@ -19,7 +20,18 @@ function generateGrid(input) {
 
     allDivs.forEach(div => {
         div.addEventListener("mouseenter", function (e) {
-            div.style.backgroundColor = "black";
+            div.style.backgroundColor = `rgb(
+                                            ${Math.floor(Math.random() * 256)},
+                                            ${Math.floor(Math.random() * 256)},
+                                            ${Math.floor(Math.random() * 256)}
+            )`;
+
+            if (div.style.opacity) {
+                div.style.opacity -= 0.1;
+            } else {
+                div.style.opacity = 1;
+            }
+
         });
     });
 }
